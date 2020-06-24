@@ -1,10 +1,15 @@
 package conditionals
 
 fun main(args: Array<String>) {
-    val age: Int = 21
-    if (age < 18){
-        println("You cannot register.")
-    }else {
-        println("You're good to go!")
+    val mode: Int = 4
+
+    when (mode) {
+        1 -> println("The mode is lazy.")
+        2 -> println("The mode is busy.")
+        3 -> {
+            println("The mode is super-productive.")
+        }
+        else -> println("What are you?")
     }
+
 }
