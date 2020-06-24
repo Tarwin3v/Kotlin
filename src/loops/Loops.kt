@@ -24,4 +24,20 @@ fun main(args: Array<String>) {
         println(x)
         x--
     }
+
+    for ( char in "Python"){
+        if (char == 'o'){
+            break
+        }
+        println(char)
+    }
+
+    val list2 = listOf("Book","Table","Laptop")
+    for (str in list2){
+        if (!str.contains('o')){
+            continue
+        }
+        println(str)
+    }
+
 }
